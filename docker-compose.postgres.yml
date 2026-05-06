@@ -1,7 +1,7 @@
 services:
   postgres:
     image: postgres:16
-    container_name: meal_builder_postgres
+    container_name: KitchenBOT
     environment:
       POSTGRES_DB: mealbot
       POSTGRES_USER: mealbot
