@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: meal_builder_postgres
+    environment:
+      POSTGRES_DB: mealbot
+      POSTGRES_USER: mealbot
+      POSTGRES_PASSWORD: mealbot
+    ports:
+      - "5432:5432"
+    volumes:
+      - meal_builder_pgdata:/var/lib/postgresql/data
+
+volumes:
+  meal_builder_pgdata:
